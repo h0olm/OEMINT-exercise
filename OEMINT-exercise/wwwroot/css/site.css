@@ -1,0 +1,225 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.userImg {
+    height: 18px;
+    width: 18px;
+}
+
+.favoriteStar {
+    height: 24px;
+    width: 24px;
+}
+
+.oemLogo {
+    width: 210px;
+    height: 40px;
+}
+
+.header {
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 15px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.contact, .language, .becomeCustomer, .logIn, .favorites {
+    font-size: 14px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.contact, .language, .becomeCustomer, .logIn{
+    border-right: solid 1px #e6e6e6;
+}
+
+.searchBarContainer {
+    margin-right: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.searchBarImg {
+    height: 30px;
+    width: 25px;
+    background-color: white;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    border-right: solid 1px #D3D3D3;
+}
+
+.searchBar {
+    height: 30px;
+    width: 500px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 0;
+    outline: 0;
+}
+
+searchbar:focus {
+    outline: none !important;
+}
+
+
+.navbar-container {
+    display: flex;
+    height: 60px;
+    background-color: #00263a;
+
+}
+
+.navbar {
+    padding: 0;
+    margin-left: 200px;
+
+}
+
+.navbarProducts, .navbarProductProcessing, .navbarManufacturer, .navbarAbout, .navbarContact, .navbarInspo {
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Doris PP';
+    font-size:18px;
+}
+
+.navbarProducts{
+    width: 150px;
+
+}
+
+.navbarProductProcessing{
+    width: 210px;
+}
+
+.navbarManufacturer{
+    width: 150px;
+}
+
+.navbarAbout{
+    width: 120px;
+}
+
+.navbarContact{
+    width: 130px;
+}
+
+.navbarInspo{
+    width: 105px;
+    background-color: orange;
+}
+
+.navbar > p1:hover {
+    background: white;
+    color: black;
+}
+
+.pageSectionContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+}
+
+.navbarTextTop{
+    font-size: 14px;
+}
+
+.sideNavContainer {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.formsContainer {
+    grid-area: 1 / 2 / 2 / 3;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.navbarList {
+    margin-top: 20px;
+    padding: 0 0 0 0;
+    font-family: 'Doris PP';
+    font-size: 16px;
+    list-style-type: none
+}
+
+.navbarListProducts, .navbarListManufacturer, .navbarListAboutUs, .navbarListContact {
+    width: 400px;
+    border-bottom: solid 1px #D3D3D3;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.navbarListImg{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 0;
+}
+
+.navbarList > li:hover {
+    background-color: #D3D3D3;
+}
+
+.pageTitle{
+    margin-bottom: 40px;
+
+}
+
+.nyhetsText{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.formContainer{
+    font-weight: 600;
+}
+
+.sendButtonForm {
+    height: 40px;
+    width: 80px;
+    background-color: orange;
+    border: 0;
+    border-radius: 20px;
+    color: white;
+}
+
+.fname, .lname, .email {
+    border: 1px solid #D3D3D3;
+    width: 300px;
+}
+
+.formContainer > input:focus {
+    outline: none !important;
+}

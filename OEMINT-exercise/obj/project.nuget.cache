@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "9KLB5asV8QuALrihZc+AZRxxHhDynURYQ5au+h6htUgKXB9ms1hftQxqkrvl1iMNLZhfcYeXzqiODc1O3ajc3g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ellio\\source\\repos\\OEMINT-exercise\\OEMINT-exercise\\OEMINT-exercise.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ellio\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

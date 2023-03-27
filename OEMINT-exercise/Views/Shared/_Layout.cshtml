@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - OEMINT_exercise</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/OEMINT_exercise.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="https://www.oemautomatic.se/">
+                    <img src="https://www.oemautomatic.se/-/media/images/new-logotypes/oemautomatic.svg?iar=0&mw=200&hash=EC24CA151B856D8726523AA0CE150775" class="oemLogo"/>
+                </a>
+            </div>
+            <div class="topRightNav">
+                <a href="https://www.oemautomatic.se/kontakt" class="contact">Kontakt</a>
+                <a href="https://www.oemautomatic.se/om-oss/in-english" class="language">In English</a>
+                <a href="https://www.oemautomatic.se/kontakt/bli-kund" class="becomeCustomer">Bli Kund</a>
+                <a href="https://www.oemautomatic.se/logga-in?return_url=%2fkontakt" class="logIn"> <img src="https://www.oemautomatic.se/ui/common/img/fontawesome/black/user.svg" class="userImg" />Logga in</a>
+                <a href="https://www.oemautomatic.se/mina-favoriter" class="favorites"><img src="https://www.oemautomatic.se/ui/common/img/fontawesome/black/star.svg" class="favoriteStar" /></a>
+            </div>
+        </div>
+
+        <div class="navbar-container">
+            <div class="navbar">
+                <p1 class="navbarProducts">PRODUKTER</p1>
+                <p1 class="navbarProductProcessing">PRODUKTFÖRÄDLING</p1>
+                <p1 class="navbarManufacturer">TILLVERKARE</p1>
+                <p1 class="navbarAbout">OM OSS</p1>
+                <p1 class="navbarContact">KONTAKT</p1>
+                <p1 class="navbarInspo">INSPO</p1>
+            </div>
+            <form class="searchBarContainer">
+                <img src="https://www.oemautomatic.se/ui/common/img/fontawesome/black/search.svg" class="searchBarImg"/>
+                <input type="text" placeholder="Vad söker du?" class="searchBar">
+            </form>
+        </div>
+    </header>
+
+>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

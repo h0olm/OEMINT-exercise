@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model List<FormDataModel>
+
+  <div class="pageSectionContainer">
+        <div class="formsContainer">
+            <div class="pageTitle">
+                <p1 class="nyhetsText">Nyhetsformulär</p1>
+                <div><p2>Fyll i informationen nedan för att prenumera på vårt nyhetsbrev!</p2></div>  
+            </div>
+
+            
+            <form class="formContainer" id="myForm method="post" asp-action="ExportToCSV">
+                  @for (int i = 0; i < Model.Count; i++)
+                  {
+                      
+                <label>Förnamn*</label><br>
+                    <input type="text" name="[@i].FirstName" id="FirstName_@i" value="@Model[i].FirstName" required/>
+                    
+                    <br>
+
+                <label>Efternamn*</label><br>
+                    <input type="text" name="[@i].LastName" id="LastName_@i" value="@Model[i].LastName" required />
+
+                    <br>
+
+                <label>Epost*</label><br>
+                    <input type="email" name="[@i].Email" id="Email_@i" value="@Model[i].Email" required />
+
+                    <br>
+
+                <label>Jag godkänner GDPR*</label><br>
+                <input type="checkbox" id="gdpr" name="gdpr" required class="checkbox"><br>
+
+                <input type="submit" value="Skicka" class="sendButtonForm" id="exportBtn">
+                }
+            </form>
+
+        </div>
+
+        <div class="sideNavContainer">
+            <p1 class="navbarTextTop"><a href="#">Hem</a> / <a href="#">Kontakt</a> / Nyhetsbrev</p1>
+            <nav>
+                <ul class="navbarList">
+                    <li class="navbarListProducts">
+                        PRODUKTER
+                        <span>
+                            <img src="https://www.oemautomatic.se/ui/common/img/fontawesome/black/chevron-right.svg" class="navbarListImg"/>
+                        </span>
+                    </li>
+
+                    <li class="navbarListManufacturer">
+                        TILLVERKARE
+                        <span>
+                            <img src="https://www.oemautomatic.se/ui/common/img/fontawesome/black/chevron-right.svg" class="navbarListImg" />
+                        </span>
+                    </li>
+
+                    <li class="navbarListAboutUs">
+                        OM OSS
+                        <span>
+                            <img src="https://www.oemautomatic.se/ui/common/img/fontawesome/black/chevron-right.svg" class="navbarListImg" />
+                        </span>
+                    </li>
+                    <li class="navbarListContact">
+                        KONTAKT
+                        <span>
+                            <img src="https://www.oemautomatic.se/ui/common/img/fontawesome/black/chevron-right.svg" class="navbarListImg" />
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
