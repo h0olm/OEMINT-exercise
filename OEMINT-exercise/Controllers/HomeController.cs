@@ -20,7 +20,7 @@ namespace OEMINT_exercise.Controllers
         {
             var formDataList = new List<FormDataModel>
          {
-        new FormDataModel() // Initialize with a default FormDataModel instance
+        new FormDataModel()
          };
 
             return View(formDataList);
