@@ -41,14 +41,14 @@ namespace OEMINT_exercise.Controllers
         [HttpPost]
         public IActionResult ExportToCSV(List<FormDataModel> formData)
         {
-            // Convert the form data to a CSV string
+
             string csvContent = CSVUtility.ConvertToCSV(formData);
 
-            // Set the content type and file name
+            
             var contentType = "text/csv";
             var fileName = "FormData.csv";
 
-            // Return the file to the client
+           
             return File(Encoding.UTF8.GetBytes(csvContent), contentType, fileName);
         }
     }
